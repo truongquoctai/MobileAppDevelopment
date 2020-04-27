@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddPatientIntoRoomVC" customModule="Management_Covid" customModuleProvider="target">
+            <connections>
+                <outlet property="bConfirm" destination="Oam-SC-BaN" id="IXz-7h-cwg"/>
+                <outlet property="clvRoom" destination="ZPt-Qj-Cm9" id="uPf-VQ-19o"/>
+                <outlet property="lblDesCription" destination="GTs-1T-iID" id="lPp-wr-6u5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x7K-7W-JgT">
+                    <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chọn phòng cho người cách ly" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUT-sF-CfJ">
+                            <rect key="frame" x="30" y="10" width="364" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTs-1T-iID">
+                            <rect key="frame" x="30" y="50" width="364" height="25"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="mjU-9M-qo1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="7C8-dl-Rpr"/>
+                        <constraint firstItem="GTs-1T-iID" firstAttribute="top" secondItem="vUT-sF-CfJ" secondAttribute="bottom" constant="10" id="BdC-o7-d9s"/>
+                        <constraint firstItem="vUT-sF-CfJ" firstAttribute="leading" secondItem="x7K-7W-JgT" secondAttribute="leading" constant="30" id="Nni-4Y-nbh"/>
+                        <constraint firstItem="GTs-1T-iID" firstAttribute="leading" secondItem="x7K-7W-JgT" secondAttribute="leading" constant="30" id="PeZ-y3-3JG"/>
+                        <constraint firstAttribute="trailing" secondItem="GTs-1T-iID" secondAttribute="trailing" constant="20" id="QO3-W1-BG6"/>
+                        <constraint firstAttribute="trailing" secondItem="vUT-sF-CfJ" secondAttribute="trailing" constant="20" id="sMT-2C-38P"/>
+                        <constraint firstItem="vUT-sF-CfJ" firstAttribute="top" secondItem="x7K-7W-JgT" secondAttribute="top" constant="10" id="wW0-HR-Y9Z"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oam-SC-BaN" customClass="BaseButton" customModule="Management_Covid" customModuleProvider="target">
+                    <rect key="frame" x="20" y="802" width="374" height="60"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="Oiu-aQ-bAo"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ZPt-Qj-Cm9">
+                    <rect key="frame" x="5" y="144" width="404" height="638"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="f5M-XJ-Qga">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Oam-SC-BaN" firstAttribute="top" secondItem="ZPt-Qj-Cm9" secondAttribute="bottom" constant="20" id="0cb-8p-j8t"/>
+                <constraint firstItem="x7K-7W-JgT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="1CV-kO-Tfg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Oam-SC-BaN" secondAttribute="bottom" id="I3Q-s4-0PK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Oam-SC-BaN" secondAttribute="trailing" constant="20" id="Rtu-Ud-9Ss"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ZPt-Qj-Cm9" secondAttribute="trailing" constant="5" id="Xg6-q9-k7i"/>
+                <constraint firstItem="ZPt-Qj-Cm9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="5" id="a7u-HD-Qar"/>
+                <constraint firstItem="ZPt-Qj-Cm9" firstAttribute="top" secondItem="x7K-7W-JgT" secondAttribute="bottom" id="aBM-Sy-QRL"/>
+                <constraint firstItem="Oam-SC-BaN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="g92-Z8-ifa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="x7K-7W-JgT" secondAttribute="trailing" id="l3R-Th-EGD"/>
+                <constraint firstItem="x7K-7W-JgT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yUZ-Om-CNp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="92.410714285714278"/>
+        </view>
+    </objects>
+</document>
