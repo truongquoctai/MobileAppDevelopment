@@ -1,1 +1,0 @@
-../../../Target Support Files/SwiftGifOrigin/SwiftGifOrigin-umbrella.h
