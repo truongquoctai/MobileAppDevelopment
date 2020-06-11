@@ -1,0 +1,6 @@
+module Pods_Management_Covid_Management_CovidUITests {
+  umbrella header "Pods-Management Covid-Management CovidUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

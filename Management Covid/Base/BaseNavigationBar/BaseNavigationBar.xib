@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseNavigationBar" customModule="CusApp" customModuleProvider="target">
+            <connections>
+                <outlet property="btnBack" destination="lcx-q8-F2V" id="lwL-Cb-mN8"/>
+                <outlet property="btnIcon" destination="nJI-m7-Oq5" id="8z3-vr-YNY"/>
+                <outlet property="lblTitle" destination="7FF-W3-wWG" id="fBR-aL-OlU"/>
+                <outlet property="vContainer" destination="pUg-gu-YQw" id="ilN-gh-vvg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pUg-gu-YQw">
+                    <rect key="frame" x="0.0" y="0.0" width="448" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7FF-W3-wWG">
+                            <rect key="frame" x="198.5" y="60.5" width="51.5" height="31.5"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJI-m7-Oq5">
+                            <rect key="frame" x="399" y="60.5" width="30" height="31.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="8tL-8m-ywT"/>
+                            </constraints>
+                            <connections>
+                                <action selector="onBtnIcon:" destination="-1" eventType="touchUpInside" id="FqI-nb-Eas"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcx-q8-F2V">
+                            <rect key="frame" x="19" y="60.5" width="30" height="31.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="8gq-zZ-2Sa"/>
+                            </constraints>
+                            <state key="normal">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="onBtnBack:" destination="-1" eventType="touchUpInside" id="aOk-vi-bKJ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="lcx-q8-F2V" firstAttribute="leading" secondItem="pUg-gu-YQw" secondAttribute="leading" constant="19" id="0cY-yK-UYz"/>
+                        <constraint firstItem="7FF-W3-wWG" firstAttribute="centerX" secondItem="pUg-gu-YQw" secondAttribute="centerX" id="C5V-jA-cvQ"/>
+                        <constraint firstItem="nJI-m7-Oq5" firstAttribute="height" secondItem="pUg-gu-YQw" secondAttribute="height" multiplier="19:60" id="Tj9-d2-oQr"/>
+                        <constraint firstItem="7FF-W3-wWG" firstAttribute="height" secondItem="pUg-gu-YQw" secondAttribute="height" multiplier="19:60" id="UPU-Ik-nB0"/>
+                        <constraint firstAttribute="bottom" secondItem="nJI-m7-Oq5" secondAttribute="bottom" constant="8" id="fRI-3V-tqv"/>
+                        <constraint firstAttribute="bottom" secondItem="7FF-W3-wWG" secondAttribute="bottom" constant="8" id="mWo-0U-bNy"/>
+                        <constraint firstAttribute="bottom" secondItem="lcx-q8-F2V" secondAttribute="bottom" constant="8" id="tmQ-Fe-cuL"/>
+                        <constraint firstItem="lcx-q8-F2V" firstAttribute="height" secondItem="pUg-gu-YQw" secondAttribute="height" multiplier="19:60" id="vpQ-u0-fkd"/>
+                        <constraint firstAttribute="trailing" secondItem="nJI-m7-Oq5" secondAttribute="trailing" constant="19" id="ySl-WA-U8O"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pUg-gu-YQw" secondAttribute="bottom" id="ArF-Pf-5Cm"/>
+                <constraint firstItem="pUg-gu-YQw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SJg-R0-LEo"/>
+                <constraint firstItem="pUg-gu-YQw" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="SmH-Gb-KuI"/>
+                <constraint firstItem="pUg-gu-YQw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="baQ-8B-b7s"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-204.34782608695653" y="-175.44642857142856"/>
+        </view>
+    </objects>
+</document>
