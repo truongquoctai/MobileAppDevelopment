@@ -1,0 +1,50 @@
+PODS:
+  - Alamofire (5.1.0)
+  - expanding-collection (3.1.0)
+  - JWTDecode (2.4.1)
+  - SDWebImage (5.8.0):
+    - SDWebImage/Core (= 5.8.0)
+  - SDWebImage/Core (5.8.0)
+  - Socket.IO-Client-Swift (15.2.0):
+    - Starscream (~> 3.1)
+  - Starscream (3.1.1)
+  - SwiftGifOrigin (1.7.0)
+  - SwiftyJSON (4.3.0)
+  - SwipeCellKit (2.6.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.1)
+  - expanding-collection
+  - JWTDecode (~> 2.4)
+  - SDWebImage
+  - Socket.IO-Client-Swift
+  - SwiftGifOrigin (~> 1.7.0)
+  - SwiftyJSON (~> 4.0)
+  - SwipeCellKit (~> 2.6.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - expanding-collection
+    - JWTDecode
+    - SDWebImage
+    - Socket.IO-Client-Swift
+    - Starscream
+    - SwiftGifOrigin
+    - SwiftyJSON
+    - SwipeCellKit
+
+SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  expanding-collection: 7eb1fc48c6ec5e00c8887fe46c595c31b81b578a
+  JWTDecode: 4bd4da0cdf0f8154fd467fa48499f34ec057fb88
+  SDWebImage: 84000f962cbfa70c07f19d2234cbfcf5d779b5dc
+  Socket.IO-Client-Swift: 1e3e3a1f09f3312a167f0d781eb2f383d477357c
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  SwipeCellKit: 935ca28c187ec6e1ffb2b578cf8ddca842bfdcbb
+
+PODFILE CHECKSUM: c2410c42d18f193da11757bce840d229e2c20ec4
+
+COCOAPODS: 1.9.1

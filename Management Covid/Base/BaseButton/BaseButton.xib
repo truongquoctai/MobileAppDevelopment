@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BaseButton" customModule="Management_Covid" customModuleProvider="target">
+            <connections>
+                <outlet property="btnButton" destination="qlD-4U-Nnc" id="cQA-LB-VQM"/>
+                <outlet property="vContainer" destination="s0P-6n-tEY" id="S7q-mV-DUb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s0P-6n-tEY">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlD-4U-Nnc">
+                            <rect key="frame" x="5" y="5" width="404" height="90"/>
+                            <state key="normal" title="Button"/>
+                            <connections>
+                                <action selector="onBtnButtonWithSender:" destination="-1" eventType="touchUpInside" id="ub1-rb-45B"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="qlD-4U-Nnc" secondAttribute="bottom" constant="5" id="Tqp-vs-ElW"/>
+                        <constraint firstItem="qlD-4U-Nnc" firstAttribute="leading" secondItem="s0P-6n-tEY" secondAttribute="leading" constant="5" id="dst-ii-o6O"/>
+                        <constraint firstItem="qlD-4U-Nnc" firstAttribute="top" secondItem="s0P-6n-tEY" secondAttribute="top" constant="5" id="mto-nL-qQW"/>
+                        <constraint firstAttribute="trailing" secondItem="qlD-4U-Nnc" secondAttribute="trailing" constant="5" id="tEg-Ls-wsW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="s0P-6n-tEY" secondAttribute="bottom" id="NHG-Bb-jDU"/>
+                <constraint firstItem="s0P-6n-tEY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hDr-aT-zs2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="s0P-6n-tEY" secondAttribute="trailing" id="nLu-JA-Rj7"/>
+                <constraint firstItem="s0P-6n-tEY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="or5-Q6-bTB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="94"/>
+        </view>
+    </objects>
+</document>

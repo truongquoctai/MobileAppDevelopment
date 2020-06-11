@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SettingPatientVC" customModule="Management_Covid" customModuleProvider="target">
+            <connections>
+                <outlet property="bFeedback" destination="vPk-7d-crn" id="hKl-bV-Q5Y"/>
+                <outlet property="bLanguages" destination="SuL-J3-pPQ" id="qG9-qc-9V7"/>
+                <outlet property="bLogout" destination="eEl-gW-lOd" id="VWv-r4-Ueu"/>
+                <outlet property="bNotification" destination="cJx-ub-0Di" id="Xif-YF-cxd"/>
+                <outlet property="bPrivacy" destination="BW7-i1-W79" id="p4i-BH-3Oz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SuL-J3-pPQ" customClass="BaseSettingButton" customModule="Management_Covid" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="169.5" width="414" height="80"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="ckc-Bd-KPW"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vPk-7d-crn" customClass="BaseSettingButton" customModule="Management_Covid" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="250" width="414" height="80"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="FCK-Sl-pcz"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BW7-i1-W79" customClass="BaseSettingButton" customModule="Management_Covid" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="330.5" width="414" height="80"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="Zsx-v9-p2g"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eEl-gW-lOd" customClass="BaseSettingButton" customModule="Management_Covid" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="420.5" width="414" height="80"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="afL-uK-tdl"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJx-ub-0Di" customClass="BaseSettingButton" customModule="Management_Covid" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="89" width="414" height="80"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="qhQ-dk-oti"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemGray4Color" red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vPk-7d-crn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="81N-t5-hZU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eEl-gW-lOd" secondAttribute="trailing" id="BA0-Eu-gza"/>
+                <constraint firstItem="cJx-ub-0Di" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Duh-DA-H7g"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="vPk-7d-crn" secondAttribute="trailing" id="GYN-BZ-4Aw"/>
+                <constraint firstItem="SuL-J3-pPQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="P0T-PC-aGw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SuL-J3-pPQ" secondAttribute="trailing" id="TMu-LN-3DO"/>
+                <constraint firstItem="BW7-i1-W79" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YvZ-ZN-NDF"/>
+                <constraint firstItem="eEl-gW-lOd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="c2f-Il-j4O"/>
+                <constraint firstItem="eEl-gW-lOd" firstAttribute="top" secondItem="BW7-i1-W79" secondAttribute="bottom" constant="10" id="iHy-II-mxP"/>
+                <constraint firstItem="cJx-ub-0Di" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="1" id="j8w-1O-PDC"/>
+                <constraint firstItem="vPk-7d-crn" firstAttribute="top" secondItem="SuL-J3-pPQ" secondAttribute="bottom" constant="0.5" id="lBH-ZA-yeI"/>
+                <constraint firstItem="BW7-i1-W79" firstAttribute="top" secondItem="vPk-7d-crn" secondAttribute="bottom" constant="0.5" id="n0y-A6-Qwl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cJx-ub-0Di" secondAttribute="trailing" id="pEh-0v-vCr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BW7-i1-W79" secondAttribute="trailing" id="ttb-IY-UL8"/>
+                <constraint firstItem="SuL-J3-pPQ" firstAttribute="top" secondItem="cJx-ub-0Di" secondAttribute="bottom" constant="0.5" id="ytp-dd-9gX"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="108"/>
+        </view>
+    </objects>
+</document>
